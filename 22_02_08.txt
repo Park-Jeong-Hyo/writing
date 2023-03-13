@@ -1,0 +1,35 @@
+open api(application programing interface) 공공데이터
+
+xml: 태그가 붙는 형태의 포멧(html느낌)
+json: 키 벨류 형태
+
+두 방식 다 문자열 포맷
+{	"status": success
+	data: [
+	{ "companyname" : "삼성"
+		"contact" : "010-1234-5678"
+		"employee": {
+		"men": 1000;
+		"women": 1000;
+			}
+		"address": "서울"
+},
+{ 
+		"companyname" : "LG"
+		"contact" : "010-2222-2222"
+		"employee": {
+		"men": 900;
+		"women": 800;
+			}
+		"address": "울산"
+},
+{ 		"companyname" : "대우"
+		"contact" : "010-3333-3333"
+		"employee": {
+			"men": 800;
+			"women": 700;
+			}
+		"address": "부산"
+},
+	
+	

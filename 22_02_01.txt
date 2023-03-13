@@ -1,0 +1,20 @@
+javascript로 브라우저에서 할 수 있는 기술
+1. contents of element 수정
+2. attributes of element 수정, 추가, 제거, 읽기 create,read,update,delete crud가능
+3. element crud 가능
+
+js에서 html의 element에 접근하는 방법
+	DOM API를 사용해서 접근한다.
+	DOM tree (구조)를 만들어서 html의 element를 구조를 분석해서 메모리상에 객체화 한다.
+	tree구조의 특징: 정렬과 탐색이 쉽다.
+	element에 접근해서 crud가능, attribute에 접근해서 crud가능,
+	1. id값으로 접근
+		document.getElementByID('id값');
+	2. class값으로 또는 tag명
+		/* 접근하고자 element가 한개인 경우 */
+		document.querySelector('css선택자문법');
+		/* 접근하고자 하는 element가 두개인 경우 */
+		document.querySelectors('css선택자문법');
+
+
+DOM(Document Obeject Model)

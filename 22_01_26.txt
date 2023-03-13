@@ -1,0 +1,45 @@
+22_01_26
+1. block, inline, inline-block
+	block: 높이는 컨텐츠 크기만큼, 너비는 한 줄 다 차지함
+	
+	border: 두께를 줄 수 있음. 물리적인 공간을 차지하기 때문에 전체 크기가 바뀔 수 있다.
+	outline: 두께를 줄 수 있긴 하나 물리적인 공간을 차지하지는 않는다, 덧칠하는 개념
+			2차원 평면 내에서 공간을 갖지 않는다. 따라서 전체 공간 크기의 변화가 없음
+
+2.form : 사용자로부터 입력값을 받기 위해 양식을 만드는 태그
+
+3. selector ( . # , [] > 공백 : ::)
+	: pseudo class		클래스 값을 명시하지 않았지만 있는 것 처럼 ex)hover
+	:: pseudo element	엘리먼트가 없지만 있는 것 처럼	ex)before, after
+
+4. box-model (contents, padding, border, margin)
+	box-sizing: element(요소)의 width, height 기준과 관련이 있는 중요한 속성
+		content-box: 디폴트는 contents의 값, box-model에서 contents의 with, height
+		border-box: border 두께까지의 with, height 포함
+		
+5. layout: 엘리먼트의 배치 정의
+	1. flex: 1차원 ,주축-교차축
+	2. grid: 2차원
+	
+6. position (static, relative, absolute, fixed, sticky)
+	static: 기본값, 2차원 공간
+	relative: 본래 있던 위치에서 상대적 위치 이동, 3차원 공간
+	absolute: 1. 부모요소의 position 속성값이 static이 아닌 요소를 기준으로 위치 지정, 3차원 공간
+			  2. 부모 요소중 position 속성값이 static이 아닌 요소가 존재하지 않으면 body 요소를 기준으로 위치 지정, 3차원 공간
+	fixed: viewport 기준으로 위치 지정, 3차원 공간
+	sticky: static + fixed, 3차원 공간 (fixed 상태로 존재하다가 특정조건에서 fixed로 바뀜)
+	
+	static을 제외한 나머지 속성값은 3차원 공간 이동(z-index)
+	top, right, bottom, left 속성과 함께 사용
+	
+7. inheritance in css
+	color:inherit같이 상속받는 요소 있음
+
+8. priority in css !important
+	구체적인게 우선순위
+
+9. unit in css (px, %, vh, vw, em, rem)
+	%: 부모요소 기준으로 자식요소 비율을 정함
+	vh,vw : viewport 기준으로 비율을 정함
+	em : 현재요소의 폰트사이즈의 배수표현
+	rm: html 기본 폰트 사이즈의 배수표현

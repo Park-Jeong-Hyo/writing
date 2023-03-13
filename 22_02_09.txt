@@ -1,0 +1,81 @@
+이벤트 프로그래밍
+1. 이벤트 타겟(=소스) : 이벤트가 발생되는 지점
+2. 이벤트 객체:
+	이벤트가 발생되면 브라우저가 이벤트 객체를 생성한다.
+	이벤트 객체는 이벤트관련 정보를 가짐.
+	- 주요 프로퍼티
+		target: 이벤트가 발생된 dom객체
+		currentTarget: 이벤트 리스너를 등록한 dom객체
+		preventDefault(): dom 객체의 기본 이벤트를 취소
+3. 이벤트리스너: 이벤트를 감지할 수 있는 센서 등록
+4. 이벤트 핸들러: 이벤트가 발생했을 때 처리할 로직(함수)
+5. 이벤트 흐름: 이벤트 전파 과정
+	1. 캡처링 단계
+	2. 타겟 단계
+	3. 버블링 단계
+6. 이벤트 타입: ex) click, keydown, keyup, mouseover....
+7. 이벤트 위임: 상위요소에 이벤트리스너를 등록하면 하위요소의 이벤트를 감지하기 때문에 궁극적으로는 이벤트리스너
+			등록 수를 줄일 수 있다.
+
+
+-- 이벤트리스너 등록방법 3가지
+
+1. 인라인방식
+	시작태그에 on 이벤트타입="JS코드"
+	-단점: 1. 버블링단계만 2. 동일이벤트타입은 하나만 등록가능
+2. 인터널방식
+	이벤트타겟.on 이벤트타입 = function() {}
+		-단점: 1. 버블링단계만 2. 동일 이벤트 타입은 하나만 등록 가능
+	이벤트타겟.addEventListener('이벤트타입', 이벤트 핸들러, 이벤트흐름)
+		이벤트 흐름: false->버블링('기본값'), true-> 캡처링)
+		-장점: 1. 동일한 이벤트에 캡처링단계, 버블링단계 모두를 등록가능.
+				2. 동일한 이벤트 타입에 여러 이벤트 핸들러 등록 가능
+				
+		
+--element 타겟 하는 방법
+1. getElementByID
+2. querySelectorAll
+3. querySelectorAll
+4. element.closest('선택자문법'): 트리구조 아래에서부터 위로 올라가면서 찾는 방법
+5. 인근 노드 탐색(dom tree구조 기억)
+	부모노드: ParentElement,
+	형제노드: PreviousElementSibling, nextElementSibling,
+	자식노드: firstElementChild,lastElementChild,
+	직계 자식전체: children
+	
+--element 컨텐츠다루기
+1.element.textContent: 자식요소의 텍스트컨텐트만 읽거나 쓰고자 할때
+2.elemenet.innerHTML: 자식요소의 하위태그 포함해서 읽어오거나 하위태그의 구조를 바꾸고자 할 때
+ 
+ --element 속성다루기
+ 1. class
+		element.classList: 클래스 속성값 읽어오기
+		element.classList.add("클래스값"): 노드에 클래스값 추가
+		element.classList.remove("클래스값"):노드에 클래스값 제거
+		element.classList.toggle("클래스값"): 노드의 클래스 있으면 제거
+		element.classList.contains("클래스값"): 노드에 클래스값이 존재하면 TRUE 없으면 false
+ 2. 속성 curd
+	element.setAttribute("속성이름","값") : 속성값 설정
+	element.getAttribute("속성이름") : 속성값 읽어오기
+	element.removeAttribute("속성이름","값") : 속성 제거
+	element.hasAttribute("속성이름","값") : 속성이 있는지 확인
+	element.attributes("속성이름","값") : 모든 속성목록 가져오기
+	
+--element 생성, dom tree에 삽입, domtree에서 제거
+	1. 생성
+		document.createElement('요소명')
+	2. 삽입
+		부묘오소.appendElement(자식요소:맨끝 자식요소가 됨)
+		부모요소.insertBefore(삽입할 요소, 참조요소)
+		element.insertAdjacentElement(위치, 요소)
+		element.insertAdjacentHTML(위치, 문자열)
+		element.insertAdjacenttext(위치, 문자열)
+		elemet.replaceChild(새엘리먼트,기존엘리먼트)
+			위치:beforeBegin, afterBegin, beforeEnd, afterEnd
+		DocumentFragment:서브 DOM 구성하여 기존DOM에 추가하기위한 용도/ 추가를 할 때마다 렌더링을 하기 때문에 한번만 렌더링을 시키기 위해서
+															기존의 dom 구조를 건드리지 않고 한번에 붙여넣는 방법.
+	3. 제거
+		부모요소.removeChild(자식요소)
+	
+	4. element를 생성 및 삽입을 html 문자열로 처리
+	ex) element.innerHTML = '<ul><li>item1</li><li>item2</li></ul>';

@@ -1,0 +1,34 @@
+22_01_17
+
+1. 웹 디자인 추세:  	https://dribbble.com/
+2. 색상이 고민될 때: 	https://mycolor.space/
+				https://material.io/
+				https://flatuicolors.com/
+				https://www.color-hex.com/
+3. 무료 이미지/동영상: https://pixabay.com/
+				https://unsplash.com/
+4. 무료 아이콘:	https://fontawesome.com/
+			https://fonts.google.com/icons
+5. 무료 폰트:   https://fonts.google.com/
+6. 반응형 웹페이지 예시: https://mediaqueri.es/
+7. 그레디언트: https://cssgradient.io/
+		   https://www.colorzilla.com/gradient-editor/
+		   
+css: 플렉스, 그리드에 대해 공부
+
+태스크 플로우:
+구조도: 사이트의 메뉴, 내부구성
+태스크 플로우: 
+프로세스 맵에서 가져온다, system. flowId, subflow 등은
+모두 프로세스맵의 것을 따른다. 하나하나의 과정은 실제로 수행하는 것이어야 한다.
+화면 단위로 구현한다. 어떤 목적(회원가입 등)을 달성하기 위해 사용자가 해야 될 과업의 흐름을
+그려보는 것. 
+프로세스 맵에 2레벨에 적혀 있는 것 들을 가져와야 한다.
+
+
+gnb global navigation bar 메인메뉴
+lnb local navigation bar 메인메뉴 밑에 짜잘메뉴
+snb side navigation bar 옆에 뜨는 메뉴
+fnb foot navigation bar 맨 밑에 오는 메뉴
+
+사이트맵: 전체 사이트를 둘러 볼 수 있는 메뉴

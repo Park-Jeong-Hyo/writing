@@ -1,0 +1,6 @@
+22_01_13
+
+<a href="https://www.naver.com target="_blank">네이버</a> : 새로운 창에 표시
+<a href="https://www.naver.com target="_self">네이버</a> : 현재 창에 표시
+<a href="https://www.naver.com target="_top">네이버</a> : 최상위 창에 표시
+<a href="https://www.naver.com target="_parent">네이버</a> : 부모 창에 표시

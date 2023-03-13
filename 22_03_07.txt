@@ -1,0 +1,23 @@
+하나의 값으로 치환될 수 있으면 표현식
+
+1. 전체 git 환경변수
+	git config --list
+2. 환경변수 수정
+	git.config --global init.defaultbranch main
+3. 개별 환경변수 확인
+	git config --get initBranch
+4. 환경변수 제거
+	git.config --unset --global init.defaultbranch
+
+5. lt -alt 이전 명령 불러오기
+
+6. rm rf 프로잭트 폴더명 :ㅣ 프로젝트 삭제
+
+7. 프로젝트 생성
+	expo init my-first-expo
+8. 생성된 프로젝트 폴더ㅗ로 이동
+	cd my-first-expo
+9. 프로잭트 시작
+	npx expo start
+
+10. npx expo install react-native-web@~0.18.10 react-dom@18.2.0 @expo/webpack- config@^18.0.1

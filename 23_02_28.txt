@@ -1,0 +1,25 @@
+spring initializr
+
+spring boot dev tool
+
+lombok: 단순반복 코드를 생산성 있게 DTO, VO만들 때 편하게 해줌
+
+spring web: 톰캣을 인베디드해줌
+
+thmeleaf: 서버를 html을 동적으로,
+
+validator: 유효성 검사를 효율적으로
+
+resources/static: 서버에서 무언가를 바꿀 필요가 없는 파일들, html, css, js등(정적)
+
+resources/template: 서버에서 무언가를 바꿀 필요가 있는 파일들(동적, 타임리프 사용)
+
+restcontroller인 경우에는
+
+응답메세지 바디에 직접 문자열을 보낼 수 있음.
+
+객체를 보내면 json형태로 반환해준다.
+
+스프링 프레임 워크에서 객체를 ㅍ
+
+slf4j: lobok의 라이브러리

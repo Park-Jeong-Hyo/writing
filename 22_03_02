@@ -1,0 +1,51 @@
+1. 동기(sync), 비동기(async)프로그래밍에 대해 설명하시오.
+	동기: 순서보장(O), 블로킹(O)
+	비동기: 순서보장(x), 블로킹(x)
+	
+	AJAX(Asynchronous Javascript and XML)
+	: 자바스크립트를 사용하여 브라우저가 서버에게 비동기방식으로 데이터를 요청하고 서버가 응답한 데이터를 수신하여
+	웹 페이지를 동적으로 갱신하는 기술
+
+2. 프라미스(promise)란?
+	1. const p = new Promise((s,f)=> if(성공){s} else {f()})
+		// 비동기 처리 코드: 시간이 소요되는 작업
+		//생성자 함수를 통해 객체 생성
+		// 서버에 정보 요청
+		//서버의 응답 받음
+	2. open(), send() 서버로 요청 전송
+	3. 성공시 then, 실패시, catch, 무조건 실행시, finally
+
+	프로미스 객체가 가지고 있는 정보 두가지
+	1. 비동기처리상태 결과 정보: pending(비동기 처리 전)
+						fulfilled(비동기처리후): S() 처리된 상태
+						rejected(비동기 처리후): f() 처리된 상태
+	2. 처리결과(성공, 실패, 데이터);
+	p.then(()=>{}) //성공 데이터처리 1
+	 .then(()=>{}) //성공 데이터처리 2
+	 .catch(()=>{}]//실패 데이터처리
+	 .finally(()=> {})//성공, 실패 상관없이 처리
+3. XMLHTTPRequest? 용도, 사용방법
+	web API
+	용도: http 요청 메소드를 만들어서 전달하는 용도
+4. fetch()?
+	web API, 반환값은 promise 객체
+	용도: http요청 메세지를 만들어 서버에 전송하고 결과를 프로미스객체로 반환해준다.
+	
+	const p = fetch(url, option)
+	p.then(()=>{}) //성공 데이터처리 1
+	 .then(()=>{}) //성공 데이터처리 2
+	 .catch(()=>{}]//실패 데이터처리
+	 .finally(()=> {})//성공, 실패 상관없이 처리
+
+5. async, await(항상 async 함수내애서 사용된다.)
+	용도: 비동기 처리를 동기처리처럼 수행한다.
+	async function(){
+	const result1 = await 프로미스 객체;
+	const result2 = await 프로미스 객체
+
+6. http요청, http응답 메세지 구조
+	http요청: method(요청방법), url(요청 서비스경로), payload(요청 데이터)
+	http응답: status-code(응답코드), response(응답 데이터) 
+	
+7. rest api
+: json형태로 자료를 주고 받는 형태를 restapi라고 함.

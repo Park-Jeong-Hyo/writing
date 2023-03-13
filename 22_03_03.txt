@@ -1,0 +1,33 @@
+client
+
+dispatch servlet
+
+handler mapping
+
+controller
+
+model and view
+
+view resolver
+
+view
+
+http request method: get post put patch delete
+	patch와 put의 차이점: put: 전체 수정/ 있으면 수정, 없으면 생성
+					 patch: 부분 수정
+
+browser-> was -> server -> was -> browser
+
+was->browser 구간의 응답에 대한 json  포멧을 정의해야 한다.
+
+{"businessNo": "xxxx"}
+
+{
+	"header" : {
+		"rtcd" : "00"
+		"rtmsg": "OK"
+	}
+	"data" : {
+		
+	}
+}

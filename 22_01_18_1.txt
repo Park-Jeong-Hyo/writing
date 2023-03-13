@@ -1,0 +1,50 @@
+22_01_19
+
+1. block, inline, inline-block
+	block: 한 줄 영역을 다 차지함, width, height 를 %, px, vw, vh 단위로 수정 가능. div,p 태그
+	inline: 컨텐츠 크기만큼 영역을 차지, 크기 조정이 불가, 크기 속성을 줄 수는 있지만 반영 안됨
+	inline-block: 컨텐츠 크기만큼 영역을 차지 + 크기 조정 가능.
+	
+	* display 속성 값에 block, inline, inline-block등을 값으로 할당하면 속성을 바꿀 수 있음.
+2. form : 회원가입등의 제출 양식, label, input type...등등
+3. selector: (., #, 콤마, [], >(직계) ,공백(자손)],:, ::
+	. : 클래스
+	# : 아이디
+	콤마: 그룹
+	[]: 속성을
+	> : 직계
+	공백: 자손
+	: : 가상클래스
+	:: : 가상속성
+4. box-model (contents, padding, border, margin)
+	contents: 내용
+	padding: 내부공백, 여기까지 background-color가 칠해짐.
+	border: 경계선
+	margin: 외부 공백
+	top- right - bottom - left 의 순서로 공백값을 각자 다르게 줄 수 있음
+5. layout
+	1. flex
+	2. grid
+	
+6. position(static, relative, absolute, fixed, sticky)
+	static: 기본설정 스태틱(2차원 가로 세로 배치)
+	relative: 기본 위치 + 상대적 위치 지정, 다른 요소에 영향을 끼치지 않음.
+	absolute: 절대 위치, 부모엘리먼트 기준으로 위치를 잡음. 부모 엘리먼트로 relative를 가짐, relative가 없을 경우 문서 루트가 기준이 됨
+	fixed: 특정 좌표를 지정해서 고정시킴, 화면을 스크롤 해도 그 자리 그대로 있음
+	sticky: 항상 노출시킴(상단 메뉴같은 것)
+	fixed: 3차원 구조로 해당 엘리먼트를 끼워 넣을 수 있음, 표시되는 화면은 평면-> 결과적으로 중첩된 화면이 가능해짐.
+	
+7. inheritance in css
+	부모엘리먼트의 속성을 상속받는 것
+	html이 최상위 부모 엘리먼트
+8. priority in css
+!important: 가장 우선순위가 낮음.
+flex와 relative 두가지의 속성을 가지고 있음.
+
+9. unit in css
+	px:
+	%: 부모요소 기준으로 자식요소의 비율을 결정, 
+	vh: viewport(화면상)에 보이는 높이의 비율
+	vw: viewport (화면상)에 보이는 넓이의 비율
+	em: 현재 요소의 폰트사이즈의 배수표현, 현재폰트사이즈의 몇배, 상위요소에서 폰트사이즈가 변경되었으면 그걸 그대로 받아서 배수표현할 수도 있음.
+	rem:html에 설정된 폰트사이트(기본16)의 배수표현

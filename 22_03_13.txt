@@ -1,0 +1,26 @@
+형상관리: 형상항목의 생명주기를 관리
+
+형상관리 시스템: tool, ex)git
+
+커밋(commit): 다음 버전의 기준선, 의미있는 단위로 커밋이 수행됨
+* 디렉토리 삭제 rm -rf 디렉토리명
+1. git 로컬 저장소
+	git init 
+	git init 폴더명
+2. git 로컬 저장소 삭제
+	.git 폴더 삭제
+
+3. git 커밋 생성하기 (staged -> commit)
+	git add
+	git commit -m '메세지'
+	
+4. git 원격 저장소 생성하기
+
+5. git 원격 저장소 삭제
+
+6. git 원격 저장소에 push하기
+					앞의 주소를 origin이라고 한다.
+	git remote add origin https://github.com/Park-Jeong-Hyo/myprj_1.git
+	git push -u origin main
+7. git원격 저장소 로컬에 복제하기
+	git clone http://github.com/Park-Jeong-Hyo/myprj_1

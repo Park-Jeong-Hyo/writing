@@ -1,0 +1,59 @@
+[아무렇게나 정리]
+
+브라우저 was 서버 was(json-> 자바객체)->(자바객체 -> json)하거나 json 그대로 전달-> 브라우저 반환
+
+was에서 오는 json 타입 파일에 대한 api를 web.api.apiresponse에 정해놨다.
+
+Lombok: 반복적 작업을 단순하게 해주는 라이브러리, 어노테이션을 활용한다.
+
+인터페이스: 인 아웃이 있다. 어떻게 주고받는지, 결과는 어떻게 나타나는지를 표현한 도식
+
+rest(representational state transfer)
+
+http url + http method
+
+자주 쓰이는 http method
+get 조회
+post 생성
+put 대체(새로운 값으로덮어쓰기)
+patch 일부수정
+delete 삭제
+
+요청사항 전달방법은 쿼리 스트링, url, 헤더, 바디 이렇게 4가지가 있다.
+
+1. 등록
+method: post , url: /users
+{
+	"email" : "test@test.com",
+	"name" : "홍길동",
+	"age" : 30,
+}
+
+2. 조회: id
+method: get, url: /users/{1}
+
+3. 목록:
+method: get, url/users
+
+4. 수정
+method: patch, url: /users/{1}
+{
+	"id" : 1,
+	"email" : "test@test.com",
+	"name" : "홍길동",
+	"age" : 30,
+}
+5. 삭제: id
+method: delete, url: /users/{1}
+
+
+응답 구조
+{
+	headers: {
+		rtcd: "00" ex) 01-
+		rtmsg: "성공"
+	}
+	data: [{
+		
+	}]
+}

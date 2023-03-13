@@ -1,0 +1,82 @@
+a : visited {} 한번 방문한 곳을 다시 클릭할때 스타일 설정
+        a {
+            text-decoration: none;
+            cursor: pointer
+        }/*사용자가 한번이라도 링크를 통해 방문하지 않은 상태*/
+        a:link { color: gray;
+
+        }
+        /* 사용자가 한번이라도 링크를 방무한 상태*/
+        a:visited {
+            color: blue;
+        }
+        /*마우스 커서가 링크위에 올라가 있는 상태*/
+        a:hover {
+            color: yellow;
+        }
+        /* 마우스 커서가 링크를 클릭하고 있는 상태*/
+        a:active {
+            color: yellowgreen;
+        }
+		
+		    <a href="https://www.gmarket.co.kr" target= "_self">G마켓_self</a>
+    <a href="https://www.gmarket.co.kr" target= "_blank">G마켓_self</a>
+    <a href="https://www.gmarket.co.kr" target= "_blank">G마켓_self</a>
+    <a href="https://www.gmarket.co.kr" target= "top">G마켓_self</a>
+	
+	더미 이미지 사이트를 링크로 연결시켜 놓으면 빠르게 이미지를 테스트 가능.
+	iframe 사이트 안에 또 사이트
+	
+	타입 탭 옆에 보여주는 이미지, favicon.
+ex) <link rel="icon" type="image/x-icon" href="./img/img1.jpg">
+
+html table 데이터를 행렬로 표시할 때 사용자가
+
+<table>
+<tr> table row
+<th> 헤딩(진하게 표시됨, 컬럼 제목)
+<td> 내용
+
+nth-child(even) 테이블에 있는 짝수행에 적용
+
+%는 상대적임. 크기를 %로 지정하면 창 크기 변화에 따라서 같이 변화함.
+
+테이블에서 width를 지정하면 body 내에서 크기를 말한다.
+
+body의 width에 따라서 table의 크기가 바뀐다.
+
+테이블 캡션(caption) 테이블 제목을 만들 수 있음
+
+테이블 각 단위를 테그로 감싸 줌으로써, 그룹단위로 스타일을 줄 수가 있음.(thead,tbody,tfoot)
+
+컬럼 레벨 별로 스타일을 주고 싶으면 col group
+
+세로로 합치는 건 rowspan="합치고 싶은 크기"
+가로로 합치는 건 colspan="합치고 싶은 크기"
+
+class, id, style 모든 엘리먼트에 적용 가능함.
+
+ul : unordered list
+ol : ordered list
+
+직계: 직계 자손
+자손: 자손 전체
+형제: 
+선택자 문법으로 직계 자손 > 로 표현
+선택자 문법, 같은 부모를 가지고 있음. +로 표현
+ul>li*3{items$}: ul의 자손 li 3개 생성, 내용에 items를 넘버링 순서대로 함.
+
+<div>: 영역을 그룹핑하는 엘리먼트
+
+dl: description list :용어 설명 리스트
+dt: description term :용어 설명 단어
+dd: description definition :용어 설명 단어 정의
+
+인라인 레벨: 필요한 만큼의 공간을 차지
+
+블록 레벨: 최대한의 공간 차지
+
+iframe 문서안의 문서
+
+document.queryselector: document는 객체, 자동으로 만들어 져 있음. 그 안에 메소드
+queryselector가 있음. 이걸로 타게팅 가능.
