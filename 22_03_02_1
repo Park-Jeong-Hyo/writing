@@ -41,9 +41,18 @@ addEventListener을 사용할 때 preventDefaultEvent()를 써서 위의 기본 
 
 서버로 데이터를 전송하는 방법
 1. url(url 경로 or queryString)
-	url 경로
+	url 경로: ex) http://localhost:9080/pubData2/bn2/1234/gildong
+				값만 url에 들어가 있다. 이런 식으로 url을 작성하고 싶으면 자바스크립트를 사용해야함.
+	queryString: ex) http://localhost:9080/pubData2/bn2?businessNm=1234&x=gildong
+				키,값 둘다 들어가 있다.
 	queryString: form 태그의 get방식에서 사용하는 방법, 인풋의 name이 키, 인풋의 입력값이 값으로 들어간다
 	
-2. 요청 메세지 바디
+2. 요청 메세지 바디:
+	form 요소의 post 방식 => businessNm=1234&name=gildong 
 3. 요청 메세지 헤더(아마도 실제로 보낼 일은 없을 것)
 
+param: parameter: 매개변수
+
+@Requestparam: 
+	Spring mvc(model- view- controller)에서 쿼리 스트링 정보를 가져오는데
+	사용할 수 있다.
