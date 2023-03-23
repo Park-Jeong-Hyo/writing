@@ -1,0 +1,35 @@
+데이터 검증 위치
+1. client : 요청 http 전송 전 검증
+2. server
+	controller : 요청http 요청 데이터 검증
+	db : 제약조건
+데이터 검증
+	1. 데이터 타입 검증
+	2. 데이터 범위
+	3. 업무규칙, 정책                  
+
+데이터 오류 레벨
+1. 필드레벨
+2. 객체레벨
+
+스프링에서의 검ㅈ믕 오류 처리
+1.validation.라이브러리 활용	
+2. BindingResult
+	BindingResult.rejectValue() 필드레벨의 오류
+	BindingResylt.reject():객체레벨의 오류등록
+3. #field:thymeleaf의 내장객체
+
+thymeleaf 표현식 종류
+
+변수표현식:	${}
+링크표현식:	@{}
+메세지표현식:#{}
+
+const regExp = /[0-9]/g;
+const str = '12';
+
+console.log(regExp.test(str));
+console.log(regExp.test(str));
+console.log(regExp.test(str));
+
+true true false

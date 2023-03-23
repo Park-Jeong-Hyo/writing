@@ -1,0 +1,5 @@
+백엔드 어노테이션 정리
+
+@Data: Tostring, EqualsAndHashcode, getter, setter, RequiredArgsconstructor
+@AllArgsConstructor: 모든 멤버 필드를 매개변수로 하는 생성자 생성자
+@NoArgsConstructor: 디폴트 생성자
